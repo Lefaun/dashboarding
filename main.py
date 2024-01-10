@@ -85,7 +85,7 @@ st.title = "Road Map of Data Science"
 st.markdown("road map")
 
 df = pd.DataFrame(
-np.random.randn(1000,2) / [50, 50] + [-86, 39],
+#np.random.randn(1000,2) / [50, 50] + [-86, 39],
 columns=['LONG', 'LAT',])
 st.map(df)
 
