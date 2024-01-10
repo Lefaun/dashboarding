@@ -94,12 +94,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.DataFrame(data='Autoria',  color= 'C06C84',
+df = pd.DataFrame(data='job_filter',
     np.random.randn(137, 2) / [50, 50] + [38.75, -9.2],
     columns=['LAT', 'LON'])
 
 st.map(df)
-st.image(pd.DataFrame(columns=['pic_url'])
+st.image = pd.DataFrame(columns=['pic_url [1]'])
          
 st.markdown("Detailed Data View")
 st.dataframe(df)
