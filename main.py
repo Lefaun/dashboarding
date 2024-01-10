@@ -59,11 +59,11 @@ for seconds in range(200):
 import altair as alt
 fig_col1, fig_col2 = st.columns(2)
 
-
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["LAT", "LON", "Freguesia"])
-
-st.area_chart(chart_data)
-#with fig_col1:
+with fig_col1:
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["LAT", "LON", "Freguesia"])
+    
+    st.area_chart(chart_data)
+#
    # st.title = "Location ID"
    # st.markdown("Location ID")
    # chart_data = pd.DataFrame(
