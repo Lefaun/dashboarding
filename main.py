@@ -40,18 +40,18 @@ for seconds in range(200):
         # fill in those three columns with respective metrics or KPIs
         kpi1.metric(
             label="LONG ⏳",
-            value=round(avg_age),
-            delta=round(avg_age) - 10,
+            value=round(avg_Long),
+            delta=round(avg_Lat) - 10,
         )
 
         kpi2.metric(
             label="LAT 💍",
-            value=int(count_married),
+            value=int(Data),
             delta=-10 + count_married,
         )
 
         kpi3.metric(
-            label="locationid",
+            label="Freguesia",
             value=f"$ {round(balance, 2)} ",
             delta=-round(balance / count_married) * 100,
         )
