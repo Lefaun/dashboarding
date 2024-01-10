@@ -114,7 +114,7 @@ st.map(df)
 
 
 
-st.image("url.http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
+st.image("url/http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
 st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id26.jpg")
 st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id28.jpg")
 st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id29.jpg")
