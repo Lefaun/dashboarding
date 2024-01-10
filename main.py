@@ -84,9 +84,17 @@ with fig_col2:
 st.title = "Road Map of Data Science"
 st.markdown("road map")
 
+df = pd.read_csv('arte-urbana - arte_urbana_fev2022.csv', 
+                  usecols=['Freguesia', 'LONG', 'LAT'])
+
+df.columns = ['Freguesia', 'LONG', 'LAT']
+st.map(df)
+
+
+
 df = pd.DataFrame(
-#np.random.randn(1000,2) / [50, 50] + [-86, 39],
-columns=['LONG', 'LAT',])
+np.random.randn(1000,2) / [50, 50] + [-86, 39],
+columns=['Freguesia','LONG', 'LAT',])
 st.map(df)
 
 st.markdown("Detailed Data View")
