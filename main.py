@@ -24,7 +24,7 @@ for seconds in range(200):
     df["lat"] = df["LAT"] * np.random.choice(range(1, 5))
 
     # creating KPIs
-    avg_age = np.mean(df["LON"])
+    #avg_age = np.mean(df["LON"])
 
     count_married = str(
         df[(df["Freguesia"] == "Freguesia")]["Freguesia"].count()
