@@ -68,10 +68,12 @@ with fig_col2:
     import pydeck as pdk
     
     chart_data = pd.DataFrame(
-       np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+       np.random.randn(1000, 2) / [50, 50] + [37.76, -9.4],
        columns=['LAT', 'LON'])
     
-    st.pydeck_chart(pdk.Deck, pydeck_obj= pd.Dtaframe,
+    st.pydeck_chart(pdk.Deck, pydeck_obj= pd.Dataframe(
+       np.random.randn(1000, 2) / [50, 50] + [37.76, -9.4],
+       columns=['LAT', 'LON']),
         map_style=None,
         initial_view_state=pdk.ViewState(
             latitude=38.75,
