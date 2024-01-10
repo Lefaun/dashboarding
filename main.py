@@ -20,11 +20,11 @@ st.title = "Real time computer Science Dashboard 1"
 job_filter = st.selectbox("Select the Job", pd.unique(df["Localizacao"]))
 
 for seconds in range(200):
-    df["lon"] = df["lon"] * np.random.choice(range(1, 5))
-    df["lat"] = df["lat"] * np.random.choice(range(1, 5))
+    df["lon"] = df["LONG"] * np.random.choice(range(1, 5))
+    df["lat"] = df["LAT"] * np.random.choice(range(1, 5))
 
     # creating KPIs
-    avg_age = np.mean(df["lon"])
+    avg_age = np.mean(df["LONG"])
 
     count_married = int(
         df[(df["stnumber"] == "stnumber")]["stnumber"].count()
@@ -39,13 +39,13 @@ for seconds in range(200):
 
         # fill in those three columns with respective metrics or KPIs
         kpi1.metric(
-            label="lon ⏳",
+            label="LONG ⏳",
             value=round(avg_age),
             delta=round(avg_age) - 10,
         )
 
         kpi2.metric(
-            label="lat 💍",
+            label="LAT 💍",
             value=int(count_married),
             delta=-10 + count_married,
         )
@@ -75,7 +75,7 @@ with fig_col1:
 with fig_col2:
     st.markdown("Tree Map")
     fig = px.density_heatmap(
-        data_frame=df, y="lat", x="lon"
+        data_frame=df, y="LAT", x="LONG"
     )
     st.write(fig)
 
@@ -86,7 +86,7 @@ st.markdown("road map")
 
 df = pd.DataFrame(
 np.random.randn(1000,2) / [50, 50] + [-86, 39],
-columns=['lon', 'lat',])
+columns=['LONG', 'LAT',])
 st.map(df)
 
 st.markdown("Detailed Data View")
