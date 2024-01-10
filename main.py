@@ -71,9 +71,7 @@ with fig_col2:
        np.random.randn(1000, 2) / [50, 50] + [37.76, -9.4],
        columns=['LAT', 'LON'])
     
-    st.pydeck_chart(pdk.Deck, pydeck_obj= pd.Dataframe(
-       np.random.randn(1000, 2) / [50, 50] + [37.76, -9.4],
-       columns=['LAT', 'LON']),
+    st.pydeck_chart(pdk.Deck
         map_style=None,
         initial_view_state=pdk.ViewState(
             latitude=38.75,
@@ -100,7 +98,7 @@ with fig_col2:
                 get_radius=200,
             ),
         ],
-    )))
+    ))
 #
    # st.title = "Location ID"
    # st.markdown("Location ID")
