@@ -58,17 +58,17 @@ for seconds in range(200):
 
 import altair as alt
 fig_col1, fig_col2 = st.columns(2)
-with fig_col1:
-    st.title = "Location ID"
-    st.markdown("Location ID")
-    chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=['LAT', 'LON'])
+#with fig_col1:
+   # st.title = "Location ID"
+   # st.markdown("Location ID")
+   # chart_data = pd.DataFrame(
+      #  np.random.randn(20, 3),
+      #  columns=['LAT', 'LON'])
 
-    c = alt.Chart(chart_data).mark_circle().encode(
-        x='LAT', y='LON', size='Localizacao', color='Localizacao', tooltip=['LAT', 'LON', 'Localizacao'])
+   # c = alt.Chart(chart_data).mark_circle().encode(
+    #    x='LAT', y='LON', size='Localizacao', color='Localizacao', tooltip=['LAT', 'LON', 'Localizacao'])
 
-    st.altair_chart(c, use_container_width=True)
+   # st.altair_chart(c, use_container_width=True)
 
 
 
