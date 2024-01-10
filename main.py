@@ -24,7 +24,7 @@ for seconds in range(200):
     df["lat"] = df["LAT"] * np.random.choice(range(1, 5))
 
     # creating KPIs
-    #avg_age = np.mean(df["LONG"])
+    avg_age = np.mean(df["LON"])
 
     count_married = str(
         df[(df["Freguesia"] == "Freguesia")]["Freguesia"].count()
@@ -37,12 +37,12 @@ for seconds in range(200):
         # create three columns
         kpi1, kpi2, kpi3 = st.columns(3)
 
-        # fill in those three columns with respective metrics or KPIs
-        #kpi1.metric(
-            #label="LONG ⏳",
-            #value=round(avg_Long),
-            #delta=round(avg_Lat) - 10,
-        #)
+        #fill in those three columns with respective metrics or KPIs
+        kpi1.metric(
+            label="LONG ⏳",
+            value=round(LON),
+            delta=round(LAT) - 10,
+        )
 
         #kpi2.metric(
             #label="LAT 💍",
@@ -62,44 +62,13 @@ fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["LAT", "LON", "Freguesia"])
     st.area_chart(chart_data)
-    chart_data = pd.DataFrame(
-       np.random.randn(1000, 2) / [50, 50] + [98.76, -9.4],
-       columns=['LAT', 'LON'])
+   
 
 with fig_col2:
 
-    import pydeck as pdk
-    
-    
-    
-    st.pydeck_chart(pdk.Deck(
-    map_style=None,
-    initial_view_state=pdk.ViewState(
-        latitude=98.76,
-        longitude=-9.4,
-        zoom=11,
-        pitch=50,
-    ),
-    layers=[
-        pdk.Layer(
-           'HexagonLayer',
-           data=chart_data,
-           get_position='[LON, LAT]',
-           radius=200,
-           elevation_scale=4,
-           elevation_range=[0, 100],
-           pickable=True,
-           extruded=True,
-        ),
-        pdk.Layer(
-            'ScatterplotLayer',
-            data=(job_filter),
-            get_position='[LON, LAT]',
-            get_color='[200, 30, 0, 160]',
-            get_radius=200,
-        ),
-    ],
-))
+     chart_data = pd.DataFrame(
+       np.random.randn(1000, 2) / [50, 50] + [98.76, -9.4],
+       columns=['LAT', 'LON'])
 #
    # st.title = "Location ID"
    # st.markdown("Location ID")
