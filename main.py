@@ -99,12 +99,16 @@ df = pd.DataFrame(
     columns=['LAT', 'LON'])
 
 st.map(df)
+
+
+st.image=(pic_url[1]), width = 400)
+
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id1.jpg")
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id3.jpg")
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id30.jpg")
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id25.jpg")
-st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id2.jpg")
-st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id4.jpg")
+st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id2.jpg")
+st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id4.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id26.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id28.jpg")
