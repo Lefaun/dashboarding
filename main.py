@@ -68,37 +68,37 @@ with fig_col2:
     import pydeck as pdk
     
     chart_data = pd.DataFrame(
-       np.random.randn(1000, 2) / [50, 50] + [37.76, -9.4],
+       np.random.randn(1000, 2) / [50, 50] + [98.76, -9.4],
        columns=['LAT', 'LON'])
     
-    st.pydeck_chart(pdk.Deck,
-        map_style=None,
-        initial_view_state=pdk.ViewState(
-            latitude=38.75,
-            longitude=-9.02,
-            zoom=11,
-            pitch=50,
+    st.pydeck_chart(pdk.Deck(
+    map_style=None,
+    initial_view_state=pdk.ViewState(
+        latitude=98.76,
+        longitude=-9.4,
+        zoom=11,
+        pitch=50,
+    ),
+    layers=[
+        pdk.Layer(
+           'HexagonLayer',
+           data=chart_data,
+           get_position='[LON, LAT]',
+           radius=200,
+           elevation_scale=4,
+           elevation_range=[0, 100],
+           pickable=True,
+           extruded=True,
         ),
-        layers=[
-            pdk.Layer(
-               'HexagonLayer',
-               data=chart_data,
-               get_position='[LON, LAT]',
-               radius=200,
-               elevation_scale=4,
-               elevation_range=[0, 1000],
-               pickable=True,
-               extruded=True,
-            ),
-            pdk.Layer(
-                'ScatterplotLayer',
-                data=chart_data,
-                get_position='[LON, LAT]',
-                get_color='[200, 30, 0, 160]',
-                get_radius=200,
-            ),
-        ],
-    ))
+        pdk.Layer(
+            'ScatterplotLayer',
+            data=chart_data,
+            get_position='[LON, LAT]',
+            get_color='[200, 30, 0, 160]',
+            get_radius=200,
+        ),
+    ],
+))
 #
    # st.title = "Location ID"
    # st.markdown("Location ID")
