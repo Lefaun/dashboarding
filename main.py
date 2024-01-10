@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide",
 )
 import pandas as 
-df = pd.read_csv(pdarte-urbana - arte_urbana_fev2022.csv')
+df = pd.read_csv('arte-urbana - arte_urbana_fev2022.csv')
 #df = pd.read_csv('https://query.data.world/s/edvqfu4ea2ap6sbmr7ht2szxjc2mij')
 placeholder = st.empty()
 #Title
