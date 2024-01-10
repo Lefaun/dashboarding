@@ -96,7 +96,7 @@ import numpy as np
 
 df = pd.DataFrame(
     np.random.randn(137, 2) / [50, 50] + [38.75, -9.2],
-    columns=['LAT', 'LON'])
+    columns=['LAT', 'LON'], data=(job_search))
 
 st.map(df)
 
