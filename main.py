@@ -63,7 +63,7 @@ with fig_col1:
     st.markdown("Location ID")
     chart_data = pd.DataFrame(
         np.random.randn(20, 3),
-        columns=['LAT', 'LON', 'Localizacao'])
+        columns=['LAT', 'LON', 'FrequesIA'])
 
     c = alt.Chart(chart_data).mark_circle().encode(
         x='LAT', y='LON', size='Localizacao', color='Localizacao', tooltip=['LAT', 'LON', 'Localizacao'])
