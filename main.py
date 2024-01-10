@@ -84,8 +84,7 @@ with fig_col2:
 st.title = "Road Map of Data Science"
 st.markdown("road map")
 
-df = pd.read_csv('arte-urbana - arte_urbana_fev2022.csv', 
-                  usecols=['Freguesia', 'LONG', 'LAT'])
+df = pd.read_csv('arte-urbana - arte_urbana_fev2022.csv', usecols=['Freguesia', 'LONG', 'LAT'])
 #df = pd.DataFrame(df.columns = ['Freguesia', 'LONG', 'LAT'])
 st.map(df)
 
