@@ -112,15 +112,6 @@ st.map(df)
 
 
 
-st.image([result.pic_url for result in top_k_samples["pic_url"]], width=200)
-
-st.image("url/http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id26.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id28.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id29.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id31.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id32.jpg")
-st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id5.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id7.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id8.jpg")
 st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id9.jpg")
