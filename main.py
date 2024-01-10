@@ -38,23 +38,23 @@ for seconds in range(200):
         kpi1, kpi2, kpi3 = st.columns(3)
 
         # fill in those three columns with respective metrics or KPIs
-        kpi1.metric(
-            label="LONG ⏳",
-            value=round(avg_Long),
-            delta=round(avg_Lat) - 10,
-        )
+        #kpi1.metric(
+            #label="LONG ⏳",
+            #value=round(avg_Long),
+            #delta=round(avg_Lat) - 10,
+        #)
 
-        kpi2.metric(
-            label="LAT 💍",
-            value=int(Data),
-            delta=-10 + count_married,
-        )
+        #kpi2.metric(
+            #label="LAT 💍",
+            #value=int(Data),
+            #delta=-10 + count_married,
+        #)
 
-        kpi3.metric(
-            label="Freguesia",
-            value=f"$ {round(balance, 2)} ",
-            delta=-round(balance / count_married) * 100,
-        )
+        #kpi3.metric(
+            #label="Freguesia",
+            #value=f"$ {round(balance, 2)} ",
+            #delta=-round(balance / count_married) * 100,
+        #)
 
 import altair as alt
 fig_col1, fig_col2 = st.columns(2)
