@@ -75,7 +75,7 @@ with fig_col1:
 with fig_col2:
     st.markdown("Tree Map")
     fig = px.density_heatmap(
-        data_frame=df, y="LAT", x="LONG"
+        data_frame=df, y="LAT", x="LON"
     )
     st.write(fig)
 
