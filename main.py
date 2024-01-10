@@ -100,7 +100,7 @@ with fig_col2:
                 get_radius=200,
             ),
         ],
-    ))
+    )
 #
    # st.title = "Location ID"
    # st.markdown("Location ID")
