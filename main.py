@@ -65,9 +65,9 @@ with fig_col1:
 
 with fig_col2:
 
-     chart_data = pd.DataFrame(
-       np.random.randn(1000, 2) / [50, 50] + [98.76, -9.4],
-       columns=['LAT', 'LON'])
+     chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["Freguesia", "LAT", "LON"])
+
+st.bar_chart(chart_data)
 #
    # st.title = "Location ID"
    # st.markdown("Location ID")
