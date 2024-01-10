@@ -112,7 +112,7 @@ st.map(df)
 
 
 
-
+st.image([result.pic_url for result in top_k_samples["pic_url"]], width=200)
 
 st.image("url/http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
 st.image("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id26.jpg")
