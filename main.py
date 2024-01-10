@@ -83,7 +83,7 @@ with fig_col2:
             pdk.Layer(
                'HexagonLayer',
                data=chart_data,
-               get_position='[lon, lat]',
+               get_position='[LON, LAT]',
                radius=200,
                elevation_scale=4,
                elevation_range=[0, 1000],
@@ -93,7 +93,7 @@ with fig_col2:
             pdk.Layer(
                 'ScatterplotLayer',
                 data=chart_data,
-                get_position='[lon, lat]',
+                get_position='[LON, LAT]',
                 get_color='[200, 30, 0, 160]',
                 get_radius=200,
             ),
