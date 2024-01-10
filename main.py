@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide",
 )
 import pandas as pd
-df = pd.read_csv('arte-urbana3.csv')
+df = pd.read_csv('arte-urbana - arte_urbana_fev2022.csv')
 #df = pd.read_csv('https://query.data.world/s/edvqfu4ea2ap6sbmr7ht2szxjc2mij')
 placeholder = st.empty()
 #Title
@@ -63,10 +63,10 @@ with fig_col1:
     st.markdown("Location ID")
     chart_data = pd.DataFrame(
         np.random.randn(20, 3),
-        columns=['lat', 'lon', 'Localizacao'])
+        columns=['LAT', 'LON', 'Localizacao'])
 
     c = alt.Chart(chart_data).mark_circle().encode(
-        x='lat', y='lon', size='Localizacao', color='Localizacao', tooltip=['lat', 'lon', 'Localizacao'])
+        x='LAT', y='LON', size='Localizacao', color='Localizacao', tooltip=['LAT', 'LON', 'Localizacao'])
 
     st.altair_chart(c, use_container_width=True)
 
