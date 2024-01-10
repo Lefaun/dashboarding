@@ -75,7 +75,7 @@ with fig_col1:
 with fig_col2:
     st.markdown("Tree Map")
     fig = px.density_heatmap(
-        data_frame=df, y="LAT", x="LON"
+        data_frame=df, y="ID", x="Freguesia"
     )
     st.write(fig)
 
@@ -95,7 +95,7 @@ import pandas as pd
 import numpy as np
 
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    #np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['LAT', 'LON'])
 
 st.map(df)
