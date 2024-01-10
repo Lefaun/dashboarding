@@ -101,7 +101,7 @@ df = pd.DataFrame(
 st.map(df)
 
 
-st.image=(pic_url[1]), width = 400))
+st.image=((pic_url[1]), width = 400)
 
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id1.jpg")
 st.image = ("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id3.jpg")
