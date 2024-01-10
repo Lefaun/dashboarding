@@ -20,7 +20,7 @@ st.title = "Real time computer Science Dashboard 1"
 job_filter = st.selectbox("Select the Job", pd.unique(df["Localizacao"]))
 
 for seconds in range(200):
-    df["lon"] = df["LONG"] * np.random.choice(range(1, 5))
+    df["lon"] = df["LON"] * np.random.choice(range(1, 5))
     df["lat"] = df["LAT"] * np.random.choice(range(1, 5))
 
     # creating KPIs
