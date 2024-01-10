@@ -17,7 +17,7 @@ placeholder = st.empty()
 #Title
 st.title = "Real time computer Science Dashboard 1"
 
-job_filter = st.selectbox("Select the Job", pd.unique(df["fulladdres"]))
+job_filter = st.selectbox("Select the Job", pd.unique(df["Localizacao"]))
 
 for seconds in range(200):
     df["lon"] = df["lon"] * np.random.choice(range(1, 5))
@@ -31,7 +31,7 @@ for seconds in range(200):
         + np.random.choice(range(1, 1000))
     )
 
-    balance = np.mean(df["locationid"])
+    balance = np.mean(df["Data"])
 
     with placeholder.container():
         # create three columns
@@ -63,10 +63,10 @@ with fig_col1:
     st.markdown("Location ID")
     chart_data = pd.DataFrame(
         np.random.randn(20, 3),
-        columns=['lat', 'lon', 'locationid'])
+        columns=['lat', 'lon', 'Localizacao'])
 
     c = alt.Chart(chart_data).mark_circle().encode(
-        x='lat', y='lon', size='locationid', color='locationid', tooltip=['lat', 'lon', 'locationid'])
+        x='lat', y='lon', size='Localizacao', color='Localizacao', tooltip=['lat', 'lon', 'Localizacao'])
 
     st.altair_chart(c, use_container_width=True)
 
