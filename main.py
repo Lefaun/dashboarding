@@ -94,12 +94,72 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.DataFrame(data='job_filter',
+df = pd.DataFrame(
     np.random.randn(137, 2) / [50, 50] + [38.75, -9.2],
     columns=['LAT', 'LON'])
 
 st.map(df)
-st.image = pd.DataFrame(columns=['pic_url [1]'])
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id1.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id3.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id30.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id25.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id2.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id4.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id27.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id26.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id28.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id29.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id31.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id32.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id5.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id7.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id8.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id9.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id10.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id11.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id6.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id33.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id34.jpg")
+st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id12.jpg")
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id13.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id14.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id15.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id16.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id17.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id18.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id19.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id20.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id21.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id22.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id23.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id24.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id35.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id36.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id37.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id38.jpg
+#st.image = url(http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id39.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id40.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id41.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id42.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id43.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id44.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id45.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id46.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id47.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id48.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id49.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id50.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id51.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id52.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id53.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id54.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id55.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id56.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id57.jpg
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id58.jpg"
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id59.jpg"
+#st.image = url("http://geoportal.cm-amadora.pt/files_site_internet/links/pcultural/id60.jpg"
+
          
 st.markdown("Detailed Data View")
 st.dataframe(df)
